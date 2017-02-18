@@ -1,0 +1,21 @@
+Шоколадка
+n = int (input())
+ m = int (input())
+ k = int (input())
+ if k < n * m and ((k % n == 0) or (k % m == 0)):
+  print('YES') else:
+  print('NO') n = int (input()) m = int (input()) k = int (input())
+ if k < n * m and ((k % n == 0) or (k % m == 0)):
+  print('YES') else:
+  print('NO')
+
+Яша плавает в бассейне
+ n = int(input())
+ m = int(input())
+ x = int(input())
+ y = int(input())
+ if n < m:
+    n, m = m, n if x > m/2:
+    x = m - x if y > n/2:
+    y = n - y
+print(y if y < x else x)
