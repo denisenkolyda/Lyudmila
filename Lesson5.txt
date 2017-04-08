@@ -1,0 +1,17 @@
+замена внутри фрагмента
+ S = input()
+ first, last = S.find('h')+1, S.rfind('h')
+ if first >= last: print(S)
+ else:
+ print ( S[:first] + 'H'.join(S[first:last].split('h')) + S[last:] ) 
+удалить каждый третий символ
+ a=input() 
+s=str()
+j=0
+for i in a:
+    if j%3==0:
+        j+=1
+    else:
+        s+=i
+        j+=1 
+print(s)

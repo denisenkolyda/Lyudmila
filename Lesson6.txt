@@ -1,0 +1,28 @@
+максимальное число идущих подряд равных элементов
+ p=int(input())
+ c=1
+ b=0 
+while p!=0:
+    v=int(input())
+    p,v=v,p
+    if v==p:
+        c+=1
+    if c>b:
+        b=c
+    if p!=v:
+        c=1
+ print(b)
+
+стандартное отклонение
+ x=float(input()) 
+s=0 
+n= 0 
+su=0 
+while x != 0:
+    su+=x**2
+    s+=x
+    n+=1
+    x=float(input()) 
+sr=s/n 
+b = ((su - 2*sr * s + n * sr ** 2) / (n - 1))**(1/2)
+print(b)
